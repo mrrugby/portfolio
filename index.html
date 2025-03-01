@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Browser Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="browser-window">
+        <div class="toolbar">
+            <div class="window-controls">
+                <span class="control red"></span>
+                <span class="control yellow"></span>
+                <span class="control green"></span>
+            </div>
+            
+        </div>
+        <div class="tabs">
+            <div class="tab active" data-tab="home">
+                <span>Home</span>
+                <span class="close-btn">✕</span>
+            </div>
+            <div class="tab" data-tab="about">
+                <span>About</span>
+                <span class="close-btn">✕</span>
+            </div>
+            <div class="tab" data-tab="projects">
+                <span>Projects</span>
+                <span class="close-btn">✕</span>
+            </div>
+            <div class="tab" data-tab="contact">
+                <span>Contact</span>
+                <span class="close-btn">✕</span>
+            </div>
+            
+        </div>
+        <div class="content">
+            <div class="page active" id="home">
+                 <button id="theme-toggle">Toggle Theme</button>
+                <h1>Welcome to My Portfolio</h1>
+                <p>Explore the tabs above or use the links below to reopen them:</p>
+                <ul class="tab-links">
+                   
+                    <li><a href="#" data-tab="about">About</a></li>
+                    <li><a href="#" data-tab="projects">Projects</a></li>
+                    <li><a href="#" data-tab="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="page" id="about">
+                
+                <h1>About Me</h1>
+                <p>I'm a creative individual who loves building things. Minimalist at heart.</p>
+            </div>
+            <div class="page" id="projects">
+                <h1>Projects</h1>
+                <ul>
+                    <li>Project 1: A cool app</li>
+                    <li>Project 2: A neat website</li>
+                    <li>Project 3: Something creative</li>
+                </ul>
+            </div>
+            <div class="page" id="contact">
+                <h1>Contact</h1>
+                <p>Email: me@example.com</p>
+                <p>Find me on the web!</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
